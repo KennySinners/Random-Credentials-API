@@ -1,9 +1,9 @@
 const { rword } = require("rword");
-const array = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 const { ems } = require("./assets/lib/long_arrays/emails");
 const { gen } = require("./gen");
 const { names } = require("./assets/lib/long_arrays/names");
 const { dogs } = require("./assets/lib/long_arrays/dogs");
+const array = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 export function Info(person: { name?: String, surname?: String, age?: Number }, jobs?: Array<string>, family?: Boolean, wife?: String, pets?: Array<Object>, objKids?: Array<Object>) {
 
