@@ -1,5 +1,5 @@
 const { rword } = require("rword");
-const { ems } = require("./assets/lib/long_arrays/emails");
+const { ems, emis } = require("./assets/lib/long_arrays/emails");
 const { gen } = require("./gen");
 const { names } = require("./assets/lib/long_arrays/names");
 const { dogs } = require("./assets/lib/long_arrays/dogs");
@@ -10,7 +10,7 @@ export function Info(person: { name?: String, surname?: String, age?: Number }, 
       const words = rword.generate(2).join("");
       const nums = array[Math.floor(Math.random() * array.length)];
       const email = `${words}${nums}@${ems[Math.floor(Math.random() * ems.length)]}`;
-      const secondEmail = `${words}${nums}@${ems[Math.floor(Math.random() * ems.length)]}`;
+      const secondEmail = `${words}${nums}@${emis[Math.floor(Math.random() * emis.length)]}`;
       const generated = gen(18);
       const anothergen = gen(18);
       const fam = family === true ? "This person has a family" : "This person does not have a family";
