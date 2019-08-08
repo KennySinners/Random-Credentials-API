@@ -1,25 +1,25 @@
 {
-  "name": "person-random-gen",
-  "version": "1.2.7",
-  "description": "Gives information about a random person",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "random",
-    "user",
-    "random user",
-    "generator"
-  ],
-  "repository": {
-    "url": "git+https://github.com/KennySinners/Random-Credentials-API",
-    "type": "git"
-  },
-  "homepage": "https://github.com/KennySinners/Random-Credentials-API#readme",
-  "bugs": {
-    "url": "https://github.com/KennySinners/Random-Credentials-API/issues"
-  },
-  "author": "Sin",
-  "license": "MIT"
-}
+      "name": "random-credentials-api",
+      "version": "1.3.0",
+      "description": "Gives information about a random person",
+      "main": "main.js",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "keywords": [
+        "random",
+        "user",
+        "random user",
+        "generator"
+      ],
+      "repository": {
+        "url": "git+https://github.com/KennySinners/Random-Credentials-API",
+        "type": "git"
+      },
+      "homepage": "https://github.com/KennySinners/Random-Credentials-API#readme",
+      "bugs": {
+        "url": "https://github.com/KennySinners/Random-Credentials-API/issues"
+      },
+      "author": "Sin",
+      "license": "MIT"
+    }
