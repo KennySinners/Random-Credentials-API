@@ -1,0 +1,17 @@
+{
+  "name": "person-random-gen",
+  "version": "1.0.3",
+  "description": "Gives information about a random person",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "random",
+    "user",
+    "random user",
+    "generator"
+  ],
+  "author": "Sin",
+  "license": "MIT"
+}
