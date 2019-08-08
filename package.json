@@ -1,6 +1,6 @@
 {
   "name": "person-random-gen",
-  "version": "1.2.4",
+  "version": "1.2.7",
   "description": "Gives information about a random person",
   "main": "main.js",
   "scripts": {
@@ -12,6 +12,14 @@
     "random user",
     "generator"
   ],
+  "repository": {
+    "url": "git+https://github.com/KennySinners/Random-Credentials-API",
+    "type": "git"
+  },
+  "homepage": "https://github.com/KennySinners/Random-Credentials-API#readme",
+  "bugs": {
+    "url": "https://github.com/KennySinners/Random-Credentials-API/issues"
+  },
   "author": "Sin",
   "license": "MIT"
 }
