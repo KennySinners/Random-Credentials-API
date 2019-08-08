@@ -7,21 +7,12 @@
  * @typedef {Object} person
  * @property {string} name [n]
  * @property {string} surname [n]
+ * @property {number} age
  */
 
 const { Info } = require("person-random-gen");
 
-console.log(Info({ name: "", surname: "" })) // Person: { Name: "Jon", Surname: "Doe", Age: 25, Email: "...", ID: "..." }
-```
-
-```js
-/**
- * @param {Number} [n]
- */
-
-const { Info } = require("person-random-gen");
-
-console.log(Info({...}, 25)) // Person: { (...), Age: 25 }
+console.log(Info({ name: "", surname: "", age: 25 })) // Person: { Name: "Jon", Surname: "Doe", Age: 25, Email: "...", ID: "..." }
 ```
 
 ```js
