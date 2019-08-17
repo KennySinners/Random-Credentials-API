@@ -3,71 +3,11 @@
 #### Randomly generates credentials about a made-up person
 
 ```js
-/**
- * @typedef {Object} person
- * @property {string} name [n]
- * @property {string} surname [n]
- * @property {number} age
- */
+const { information } = require("random-credentials-api")
 
-const { Info } = require("person-random-gen");
-
-console.log(Info({ name: "", surname: "", age: 25 })) // Person: { Name: "Jon", Surname: "Doe", Age: 25, Email: "...", ID: "..." }
-```
-
-```js
-/**
- * @param {string[]} [n]
- */
-
-const { Info } = require("person-random-gen");
-
-console.log(Info({...}, (...), ["Software Engineer"])) // Person: { ... }, Jobs: ['Software Engineer']
-```
-
-```js
-/**
- * @param {boolean} [n]
- */
-
-const { Info } = require("person-random-gen");
-
-console.log(Info({...}, (...), [...], true)) // Person: {...}, Jobs: [...], "This Person has a family"
-```
-
-```js
-/**
- * @param {string} [n]
- */
-
-const { Info } = require("person-random-gen");
-
-console.log(Info({...}, (...), [...], boolean, "Karen")) // Person: {...}, Jobs: [...], "...", Wife: { Name: "Karen", Surname: "Doe", Age: 23, Email: "...", ID: "..."} 
-```
-
-```js
-/**
- * @typedef {object[]} [n]
- * @property {string} name
- * @property {number} age
- */
-
-const { Info } = require("person-random-gen");
-
-console.log(Info(..., "Karen", [{ name: "", age: 0 }])) //..., Wife: {...}, Pets: { Number_of_pets: 1, About_pets: [ { name: "Fido", age: 5 }]}
-```
-
-```js
-/**
- * @typedef {object[]} [n]
- * @property {string} name
- * @property {string} surname
- * @property {number} age
- */
-
-const { Info } = require("person-random-gen");
-
-console.log(Info(..., [{...}], [ { name: "Danny", surname: "Doe", age: 5 }])) //..., Pets: {...}, Kids: { Number_of_kids: 1, About_Kids: [ { name: "Danny", surname: "Doe", age: 5 }]}
+information().then(person => {
+      console.log(person);
+}).catch(e => console.log(e));
 ```
 
 <br><br>
@@ -77,47 +17,82 @@ console.log(Info(..., [{...}], [ { name: "Danny", surname: "Doe", age: 5 }])) //
 
 ##### Code
 ```js
-Info({ name: "Johnny", surname: "Depp", age: 25} , ["Software Engineer", "Chef"], true, "Karen", [ { name: "", age: 0 }], [ { name: "", surname: "", age: 0}])
+information().then(person => {
+      console.log(person);
+}).catch(e => console.log(e));
 ```
 
 ##### What it returns
 ```json
 {
-      "Person": {
-            "Name": "Johnny",
-            "Surname": "Depp",
+    "Person": {
+        "Name": "Nickholas",
+        "Surname": "Renshaw",
+        "Age": 27,
+        "Family": "Has a family",
+        "Sex": "Male",
+        "Sexuality": "Heterosexual",
+        "Email": "vavasoursbunglers2@aol.it",
+        "ID": "550749512876691903"
+    },
+    "About_Family": {
+        "Spouse": {
+            "Name": "Andreea",
+            "Surname": "Renshaw",
             "Age": 25,
-            "Email": "caliberedmythicise2@globo.com",
-            "ID": "629386460374631443"
-      },
-      "Jobs": [
-            "Software Engineer",
-            "Chef"
-      ],
-      "Family": "This person has a family",
-      "About_Family": {
-            "Wife": {
-                  "Name": "Karen",
-                  "Surname": "Depp",
-                  "Age": 23,
-                  "Email": "caliberedmythicise2@charter.net",
-                  "ID": "163855868260278880"
-            },
-            "Kids": {
-                  "Number_of_kids": 1,
-                  "About_Kids": [{
-                        "name": "Riccardo",
-                        "surname": "Depp",
-                        "age": 16
-                  }]
-            },
-            "Pets": {
-                  "Number_of_pets": 1,
-                  "About_pets": [{
-                        "name": "Benji",
-                        "age": 12
-                  }]
-            }
-      }
+            "Sex": "Male",
+            "Sexuality": "Heterosexual",
+            "Email": "cataclasmconstruer2@yahoo.com",
+            "ID": "280587421554643703"
+        },
+        "Kids": {
+            "Number_of_kids": 5,
+            "About_Kids": [{
+                    "name": "Esa",
+                    "surname": "Renshaw",
+                    "sex": "Female",
+                    "age": 7
+                },
+                {
+                    "name": "Mostafa",
+                    "surname": "Renshaw",
+                    "sex": "Male",
+                    "age": 8
+                },
+                {
+                    "name": "Lovel",
+                    "surname": "Renshaw",
+                    "sex": "Female",
+                    "age": 10
+                },
+                {
+                    "name": "Schuyler",
+                    "surname": "Renshaw",
+                    "sex": "Male",
+                    "age": 2
+                },
+                {
+                    "name": "Leopold",
+                    "surname": "Renshaw",
+                    "sex": "Female",
+                    "age": 7
+                }
+            ]
+        },
+        "Pets": {
+            "Number_of_pets": 2,
+            "About_pets": [{
+                    "name": "Brutus",
+                    "age": 5,
+                    "sex": "Female"
+                },
+                {
+                    "name": "Josie",
+                    "age": 5,
+                    "sex": "Male"
+                }
+            ]
+        }
+    }
 }
 ```
