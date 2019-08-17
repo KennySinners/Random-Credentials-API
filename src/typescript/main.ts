@@ -17,7 +17,7 @@ const information =
         const secondEmail = `${word}${nums}@${emis[Math.floor(Math.random() * emis.length)]}`;
         const generated = gen(18);
         const anothergen = gen(18);
-        const num = 5;
+        const num = Math.floor(Math.random() * 7);
         const petNum = Math.floor(Math.random() * 7);
         let kid = {
             sex: ''
